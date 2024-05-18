@@ -340,24 +340,25 @@ profile-photo .img{
 .project-title p{
   color: #e5e5e5;
 }
-.projects{
+.projects {
   display: flex;
-  justify-content:center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: -50px; /* Compensating for the right margin on the last item */
 }
-.project{
-    /* padding: 30px 15px; */
-    color: #e5e5e5;
-    border: 2px solid #e5e5e5;
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-    padding: 25px;
-    text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
-    margin-right: 50px;
+.project {
+  color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  position: relative;
+  padding: 25px;
+  text-align: center;
+  flex-basis: calc(33.33% - 50px); /* Adjusted width for three projects in a row */
+  margin-right: 50px;
+  margin-bottom: 50px; /* Added margin bottom for spacing */
+  transition: .3s;
 }
+
 .project i{
   background-color: #fed700;
   width: 60px;
